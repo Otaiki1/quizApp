@@ -1,0 +1,98 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('other.ttf');
+}
+
+body{
+    background-color: #eeeeee;
+    padding: 30px 0px;
+}
+.grid{
+    width: 50vh;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(2, 10, 43);
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid h1 {
+    font-family: myFirstFont;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.grid #question{
+    font-family: myFirstFont;
+    font-size: 30px;
+    color: #fff;
+}
+
+.buttons{
+    margin-top: 30px;
+}
+button {
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1d3c6a;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    background-color: rgb(2, 10, 43);
+}
+
+
+#progress{
+    color: #5c5603;
+    font-size: 18px; 
+    float: right;
+    margin-top: 30;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: rgb(255, 218, 6);
+    border: none;
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+    
+}
+
+#score{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+@media (max-width: 600px) and (max-height: 600px){
+    body{
+        padding: 0px;
+    }
+    .grid{
+        width: 60vw;
+        height: 100vh;
+        padding: 10px 40px;
+    }
+    .grid h1 {
+        font-size: 30px;
+    }
+    
+    .grid #question{
+        font-size: 18px;
+    }
+    
+    .buttons{
+        margin-top: 20px;
+    }
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+    
+
+}
