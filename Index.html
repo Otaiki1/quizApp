@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="splash.Css">
     <link rel="stylesheet" href="Style.Css">
-    <title>Quiz</title>
+    <title>QuizApp</title>
+    
 </head>
 <body>
+    <div class="splash">
+        <h1 class="fade-in"> QuizApp <img src="pic_bulbon.gif" width="100px" height="100px"></h1>
+    </div>
     <div class="grid">
+        
         <div id="quiz">
-            <h1>Quiz</h1>
+            <h1>QuizApp<img src="pic_bulbon.gif" width="50px" height="50px"></h1>
             <hr>
 
             <p id="question"></p>
@@ -30,7 +36,14 @@
 
         </div>
     </div>
-    
+    <script>
+        const splash  = document.querySelector('.splash')
+        document.addEventListener('DOMContentLoaded', (e)=>{
+            setTimeout(()=>{
+                splash.classList.add('display-none');
+            }, 2000);
+        })
+    </script>
     <script src="quiz_controller.js"></script>
     <script src="question.js"></script>
     <script src="app.js"></script>

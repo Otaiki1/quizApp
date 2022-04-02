@@ -35,8 +35,8 @@ function showProgress(){
 }
 
 function showScores(){
-    var gameOverHtml = "<h1> Result </h1>"
-    gameOverHtml += "<h2 id='score'>Your scores: " + quiz.score + "</h2>"; 
+    var gameOverHtml = "<h1 style='text-align: center;line-height: 200px;'> Result </h1>"
+    gameOverHtml += "<h2 id='score' style='text-align: center;line-height: 200px;'>Your scores: " + quiz.score + " / " +quiz.questions.length+"</h2>"; 
     var element = document.getElementById("quiz")
     element.innerHTML = gameOverHtml       
 };
@@ -44,10 +44,10 @@ function showScores(){
 
 
 var questions = [
-    new Question("Which one is not an object oriented programming language ?" , ["Java","C#","C++","C"], "C"),
-    new Question("Which language is used for styliing webpages?" , ["HTML","Jquery","CSS","XML"], "CSS"),
-    new Question("There are ______ main components of object oriented programming ?" , ["1","6","2","4"], "4"),
     new Question("Which language is used for webapps?" , ["PHP","Python","Javascript","All"], "All"),
+    new Question("Which one is not an object oriented programming language ?" , ["Java","C#","C++","C"], "C"),
+    new Question("There are ______ main components of object oriented programming ?" , ["1","6","2","4"], "4"),
+    new Question("Which language is used for styling webpages?" , ["HTML","Jquery","CSS","XML"], "CSS"),
     new Question("MVC is a ______ ?" , ["Language","Library","Framework","All"], "Framework")
 ];
 
