@@ -70,7 +70,8 @@ button {
 }
 @media (max-width: 600px) and (max-height: 600px){
     body{
-        padding: 0px;
+        padding: 10px 20px;
+
     }
     .grid{
         width: 60vw;
